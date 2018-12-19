@@ -1,0 +1,103 @@
+[22-Feb-2018 19:55:39 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/jacadeve/public_html/register/register.php on line 84
+[22-Feb-2018 19:55:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jacadeve/public_html/register/register.php:84) in /home/jacadeve/public_html/register/register.php on line 92
+[27-Feb-2018 05:13:37 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 163
+[27-Feb-2018 05:13:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 164
+[27-Feb-2018 05:14:46 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 163
+[27-Feb-2018 05:14:46 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 165
+[27-Feb-2018 05:15:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 163
+[27-Feb-2018 05:15:13 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 165
+[27-Feb-2018 05:16:05 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 163
+[27-Feb-2018 05:16:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 170
+[27-Feb-2018 05:16:53 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 163
+[27-Feb-2018 05:16:53 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 170
+[27-Feb-2018 05:19:06 UTC] PHP Parse error:  syntax error, unexpected 'dev' (T_STRING) in /home/jacadeve/public_html/register/register.php on line 161
+[27-Feb-2018 05:20:32 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 164
+[27-Feb-2018 05:20:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 171
+[27-Feb-2018 05:26:53 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 164
+[27-Feb-2018 05:26:53 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 166
+[27-Feb-2018 05:26:53 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 173
+[27-Feb-2018 05:29:43 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 165
+[27-Feb-2018 05:29:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 167
+[27-Feb-2018 05:29:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 174
+[27-Feb-2018 05:33:22 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 165
+[27-Feb-2018 05:33:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 167
+[27-Feb-2018 05:33:22 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 174
+[27-Feb-2018 05:40:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 164
+[27-Feb-2018 05:40:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 168
+[27-Feb-2018 05:40:13 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 175
+[27-Feb-2018 05:40:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 164
+[27-Feb-2018 05:40:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 168
+[27-Feb-2018 05:40:19 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 175
+[27-Feb-2018 05:40:20 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 164
+[27-Feb-2018 05:40:20 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 168
+[27-Feb-2018 05:40:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 175
+[27-Feb-2018 05:40:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 164
+[27-Feb-2018 05:40:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 168
+[27-Feb-2018 05:40:24 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 175
+[27-Feb-2018 05:40:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 164
+[27-Feb-2018 05:40:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 168
+[27-Feb-2018 05:40:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 175
+[27-Feb-2018 05:40:43 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/jacadeve/public_html/register/register.php on line 164
+[27-Feb-2018 05:40:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 168
+[27-Feb-2018 05:40:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/jacadeve/public_html/register/register.php on line 175
+[27-Feb-2018 05:42:01 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/jacadeve/public_html/register/register.php on line 180
+[27-Feb-2018 05:42:28 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/jacadeve/public_html/register/register.php on line 180
+[01-Mar-2018 07:04:14 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/jacadeve/public_html/register/register.php on line 212
+[06-Mar-2018 03:09:58 UTC] PHP Warning:  include(Abdalla/header.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/register/register.php on line 188
+[06-Mar-2018 03:09:58 UTC] PHP Warning:  include(): Failed opening 'Abdalla/header.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/register/register.php on line 188
+[06-Mar-2018 03:09:58 UTC] PHP Warning:  include(Abdalla/logo.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/register/register.php on line 192
+[06-Mar-2018 03:09:58 UTC] PHP Warning:  include(): Failed opening 'Abdalla/logo.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/register/register.php on line 192
+[06-Mar-2018 03:10:14 UTC] PHP Warning:  include(Abdalla/header.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/register/register.php on line 188
+[06-Mar-2018 03:10:14 UTC] PHP Warning:  include(): Failed opening 'Abdalla/header.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/register/register.php on line 188
+[06-Mar-2018 03:10:14 UTC] PHP Warning:  include(Abdalla/logo.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/register/register.php on line 192
+[06-Mar-2018 03:10:14 UTC] PHP Warning:  include(): Failed opening 'Abdalla/logo.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/register/register.php on line 192
+[06-Mar-2018 03:13:33 UTC] PHP Warning:  preg_replace(): Unknown modifier 'g' in /home/jacadeve/public_html/register/register.php on line 112
+[06-Mar-2018 03:13:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jacadeve/public_html/register/register.php:112) in /home/jacadeve/public_html/register/register.php on line 163
+[08-Mar-2018 01:19:33 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/jacadeve/public_html/register/register.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/register/register.php on line 12
+[08-Mar-2018 01:19:36 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/jacadeve/public_html/register/register.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/register/register.php on line 12
+[08-Mar-2018 01:20:52 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/jacadeve/public_html/register/register.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/register/register.php on line 12
+[09-Mar-2018 23:47:23 UTC] PHP Warning:  include(../client/header.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:47:23 UTC] PHP Warning:  include(): Failed opening '../client/header.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:47:23 UTC] PHP Warning:  include(../client/logo.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:47:23 UTC] PHP Warning:  include(): Failed opening '../client/logo.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:47:23 UTC] PHP Warning:  include(../client/footer.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:47:23 UTC] PHP Warning:  include(): Failed opening '../client/footer.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:51:44 UTC] PHP Warning:  include(client/header.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:51:44 UTC] PHP Warning:  include(): Failed opening 'client/header.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:51:44 UTC] PHP Warning:  include(client/logo.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:51:44 UTC] PHP Warning:  include(): Failed opening 'client/logo.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:51:44 UTC] PHP Warning:  include(client/footer.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:51:44 UTC] PHP Warning:  include(): Failed opening 'client/footer.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:52:16 UTC] PHP Warning:  include(../client/header.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:52:16 UTC] PHP Warning:  include(): Failed opening '../client/header.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:52:16 UTC] PHP Warning:  include(../client/logo.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:52:16 UTC] PHP Warning:  include(): Failed opening '../client/logo.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:52:16 UTC] PHP Warning:  include(../client/footer.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:52:16 UTC] PHP Warning:  include(): Failed opening '../client/footer.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:52:47 UTC] PHP Warning:  include(/client/header.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:52:47 UTC] PHP Warning:  include(): Failed opening '/client/header.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:52:47 UTC] PHP Warning:  include(../client/logo.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:52:47 UTC] PHP Warning:  include(): Failed opening '../client/logo.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:52:47 UTC] PHP Warning:  include(../client/footer.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:52:47 UTC] PHP Warning:  include(): Failed opening '../client/footer.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:53:10 UTC] PHP Warning:  include(client/header.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:53:10 UTC] PHP Warning:  include(): Failed opening 'client/header.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 196
+[09-Mar-2018 23:53:10 UTC] PHP Warning:  include(../client/logo.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:53:10 UTC] PHP Warning:  include(): Failed opening '../client/logo.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:53:10 UTC] PHP Warning:  include(../client/footer.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:53:10 UTC] PHP Warning:  include(): Failed opening '../client/footer.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:53:21 UTC] PHP Warning:  include(../client/logo.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:53:21 UTC] PHP Warning:  include(): Failed opening '../client/logo.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 200
+[09-Mar-2018 23:53:21 UTC] PHP Warning:  include(../client/footer.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:53:21 UTC] PHP Warning:  include(): Failed opening '../client/footer.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:53:33 UTC] PHP Warning:  include(../client/footer.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/register/register.php on line 372
+[09-Mar-2018 23:53:33 UTC] PHP Warning:  include(): Failed opening '../client/footer.html' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/register/register.php on line 372

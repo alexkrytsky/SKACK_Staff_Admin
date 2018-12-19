@@ -1,0 +1,374 @@
+<?php
+/**
+ * index.php
+ *
+ * SKCAC Staff Portal
+ *
+ * Author: Caleb Snoozy
+ * Date: 2/12/18
+ */
+
+require '../../common/index.php';
+
+verify_session( true );
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SKCAC Staff Portal</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--  <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">-->
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 navbar-expand-md">
+  <a class="navbar-brand col-10 col-md-3 col-lg-2 mr-0" href="/staff/dashboard">SKCAC Staff Portal</a>
+  <button class="navbar-toggler col-2" type="button" data-toggle="collapse" data-target="#navbar-collapsible"
+          aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input id="search-bar" class="form-control form-control-dark w-100" type="text" placeholder="Search"
+         aria-label="Search">
+  <div class="collapse navbar-collapse" id="navbar-collapsible">
+    <ul class="navbar-nav px-3"> <!-- Needs to be collapsible-->
+      <li class="nav-item d-md-none">
+        <a class="nav-link active" href="#">
+          <span data-feather="home"></span>
+          Dashboard <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item d-md-none">
+        <a class="nav-link" href="#">
+          <span data-feather="layers"></span>
+          Recent Updates
+        </a>
+      </li>
+      <li class="nav-item d-md-none">
+        <a class="nav-link" href="#">
+          <span data-feather="users"></span>
+          My Clients
+        </a>
+      </li>
+      <li class="nav-item d-md-none">
+        <a class="nav-link" href="#">
+          <span data-feather="plus"></span>
+          Add a new Client
+        </a>
+      </li>
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="../signout">Sign out</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              Recent Updates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"></span>
+              My Clients
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="plus"></span>
+              Add a new Client
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Saved reports</span>
+          <a class="d-flex align-items-center text-muted" href="#">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Current month
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Last quarter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Social engagement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Year-end sale
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button class="btn btn-sm btn-outline-secondary"
+                    data-tooltip='tooltip' data-placement='top' title='Export This List to PDF'><span class="d-none d-md-inline">Export </span><span data-feather="external-link"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h2>Clients</h2>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button id="back" class="btn btn-sm btn-outline-secondary">&lt;&lt;</button>
+            <input id="page" type="number" value="1" min="1">
+            <button id="next" class="btn btn-sm btn-outline-secondary">&gt;&gt;</button>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive-xl">
+        <table id="client-table" class="table table-striped table-sm table-hover">
+          <caption>Max 25 Clients.</caption>
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email </th>
+            <th>Phone </th>
+            <th class="d-none d-lg-table-cell">Last Updated </th>
+            <th class="d-none d-lg-table-cell">Last Contacted </th>
+            <th>Emergency Info</th>
+          </tr>
+          </thead>
+          <tbody id="client-list">
+          <tr>
+            <td colspan="6">Loading Data</td>
+          </tr>
+          </tbody>
+        </table>
+        <table id="client-test-table"></table>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+<!--<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>-->
+
+<script>
+  let target = null;
+  let offset = 0;
+  let search = "";
+
+  function formatPhoneNumber(s) {
+    let s2 = ("" + s).replace(/\D/g, '');
+    let m = s2.match(/^(\d{3})(\d{3})(\d{4})$/);
+    return (!m) ? null : "(" + m[1] + ") " + m[2] + "-" + m[3];
+  }
+
+  function queryDatabase() {
+    let backButton = $('#back');
+    let nextButton = $('#next');
+    $.ajax({
+      url: '/api/accounts_joined/',
+      data: {
+        'offset': offset,
+        'search': search
+      },
+      dataType: 'json',
+      success: function (data) {
+        data = data['data'];
+        if (Object.keys(data).length > 0) {
+          let table = "";
+          let numRows = Object.keys(data).length;
+          for (let row in data) {
+            let client = data[row];
+            table += `
+                <tr>
+                  <td><a href="client?client_id=${client['client_id']}">${client['first_name']} ${client['last_name']}</a></td>
+                  <td>${client['email']}</td>
+                  <td>${formatPhoneNumber(client['phone'])}</td>
+                  <td class="d-none d-lg-table-cell">${client['last_update']}</td>
+                  <td class="d-none d-lg-table-cell">${client['last_update']}</td>
+                  <td class="text-center"><a href="client/emergency/?client_id=${client['client_id']}"
+                  data-tooltip='tooltip' data-placement='top' title='Emergency Contact Information'>
+                  <span class="d-none d-lg-inline">Emergency Info </span><span data-feather="phone">Emergency</span>
+                  </a></td>
+                </tr>`;
+          }
+          target.empty();
+          target.append(table);
+          if (numRows === 25) {
+            nextButton.prop('disabled', false);
+          } else {
+            nextButton.prop('disabled', true);
+          }
+
+          if (offset === 0)
+            backButton.prop('disabled', true);
+          else
+            backButton.prop('disabled', false);
+
+        } else {
+          let table = `<tr><td colspan="6">No Results</td></tr>`;
+          target.empty();
+          target.append(table);
+          if (offset === 0)
+            backButton.prop('disabled', true);
+          nextButton.prop('disabled', true);
+        }
+        feather.replace();
+        $(function () {
+          $('[data-tooltip="tooltip"]').tooltip()
+        });
+      }
+    });
+  }
+
+  $(function () {
+    target = $('#client-list');
+    let backButton = $('#back');
+    let nextButton = $('#next');
+    let pageInput = $('#page');
+    let timeoutID = 0;
+
+    $('#search-bar').on('input', function () {
+      search = this.value;
+      window.clearTimeout(timeoutID);
+      timeoutID = window.setTimeout(queryDatabase, 1000);
+    });
+
+    queryDatabase();
+
+    // PAGE BUTTONS
+
+    backButton.on('click', function () {
+      if (offset > 0)
+        offset -= 25;
+
+      pageInput.val(offset / 25 + 1);
+
+      window.clearTimeout(timeoutID);
+      timeoutID = window.setTimeout(queryDatabase, 200);
+    });
+
+    nextButton.on('click', function () {
+      offset += 25;
+
+      pageInput.val(offset / 25 + 1);
+
+      window.clearTimeout(timeoutID);
+      timeoutID = window.setTimeout(queryDatabase, 200);
+    });
+
+    pageInput.on('input', function () {
+      offset = (this.value - 1) * 25;
+      window.clearTimeout(timeoutID);
+      timeoutID = window.setTimeout(queryDatabase, 200);
+    });
+    // SORTING BUTTONS
+
+    // nameSort.on('click', function(){
+    //   if (sortedBy !== 'first_name'){ // Does not equal current column
+    //     sortedBy = 'first_name';
+    //     ascending = true;
+    //   } else {
+    //     if (ascending)
+    //       ascending = false;
+    //     else // Reset Sorted by
+    //       sortedBy = 'client_id';
+    //   }
+    //   queryDatabase(tbody, offset, search, sortedBy, ascending);
+    // });
+    // emailSort.on('click', function(){
+    //   if (sortedBy !== 'email'){ // Does not equal current column
+    //     sortedBy = 'email';
+    //     ascending = true;
+    //   } else {
+    //     if (ascending)
+    //       ascending = false;
+    //     else // Reset Sorted by
+    //       sortedBy = 'client_id';
+    //   }
+    //   queryDatabase(tbody, offset, search, sortedBy, ascending);
+    // });
+    // phoneSort.on('click', function(){
+    //   if (sortedBy !== 'phone'){ // Does not equal current column
+    //     sortedBy = 'phone';
+    //     ascending = true;
+    //   } else {
+    //     if (ascending)
+    //       ascending = false;
+    //     else // Reset Sorted by
+    //       sortedBy = 'client_id';
+    //   }
+    //   queryDatabase(tbody, offset, search, sortedBy, ascending);
+    // });
+    // updateSort.on('click', function(){
+    //   if (sortedBy !== 'last_update'){ // Does not equal current column
+    //     sortedBy = 'last_update';
+    //     ascending = true;
+    //   } else {
+    //     if (ascending)
+    //       ascending = false;
+    //     else // Reset Sorted by
+    //       sortedBy = 'client_id';
+    //   }
+    //   queryDatabase(tbody, offset, search, sortedBy, ascending);
+    // });
+    // contactedSort.on('click', function(){
+    //   if (sortedBy !== 'last_update'){ // Does not equal current column
+    //     sortedBy = 'last_update';
+    //     ascending = true;
+    //   } else {
+    //     if (ascending)
+    //       ascending = false;
+    //     else // Reset Sorted by
+    //       sortedBy = 'client_id';
+    //   }
+    //   queryDatabase(tbody, offset, search, sortedBy, ascending);
+    // });
+  });
+
+  $(function () {
+    $('[data-tooltip="tooltip"]').tooltip()
+  });
+</script>
+</body>
+</html>

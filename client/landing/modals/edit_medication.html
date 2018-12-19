@@ -1,0 +1,219 @@
+<!--
+edit_medication.html
+
+*** This file is to only be imported by php, not linked to directly.
+
+Creates a dynamic bootstrap modal, to be loaded with information via Javascript.
+
+Author: Caleb Snoozy
+Date: 2/26/2018
+-->
+
+<div class='modal fade'
+     id='edit-medication'
+     tabindex='-1'
+     role='dialog'
+     aria-labelledby='edit-medication-label'
+     aria-hidden='true'>
+  <div class='modal-dialog modal-lg'
+       role='document'>
+    <div class='modal-content'>
+      <!-- === Modal Header ======================================================================================== -->
+      <div class='modal-header bg-dark text-light'>
+        <h5 class='modal-title'
+            id='edit-medication-label'>
+          Edit Medication
+        </h5>
+        <button class='close text-light'
+                type='button'
+                data-dismiss='modal'
+                aria-label='Close'>
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div>
+      <!-- === Modal Header End ==================================================================================== -->
+      <div class='modal-body bg-light p-0 m-0'>
+        <form id='medication-edit-form'
+              method='post'>
+          <ul class='list-group list-group-flush'>
+
+            <!-- === Medication Input ============================================================================== -->
+            <li class='list-group-item'>
+              <div class='d-flex w-100 justify-content-between'>
+                <label class='h5'
+                       for='medication-edit-input-medication'>
+                  Medication
+                </label>
+                <small class='form-text text-muted text-right'>
+                  The medication name and other information.
+                </small>
+              </div>
+              <div class='input-group'>
+                <input class='form-control'
+                       id='medication-edit-input-medication'
+                       name='medication'
+                       type='text'
+                       placeholder='Medication'
+                       aria-label='Medication'
+                       required>
+                <div class='input-group-append'>
+                  <span class='input-group-text text-light'>
+                    <i data-feather='circle'></i>
+                  </span>
+                </div>
+              </div>
+              <small class='form-text text-muted'>Original:
+                <span class='font-italic'
+                      id='medication-edit-input-medication-original'>
+                      </span>
+              </small>
+            </li>
+            <!-- === Medication Input End ========================================================================== -->
+
+            <!-- === Dosage Input ================================================================================== -->
+            <li class='list-group-item '>
+              <div class='d-flex w-100 justify-content-between'>
+                <label class='h5'
+                       for='medication-edit-input-dosage'>
+                  Dosage
+                </label>
+                <small class='form-text text-muted text-right'>
+                  The medication dosage in milligrams.
+                </small>
+              </div>
+              <div class='input-group'>
+                <input class='form-control'
+                       id='medication-edit-input-dosage'
+                       name='dosage'
+                       type='text'
+                       placeholder='Dosage'
+                       aria-label='Dosage'
+                       required>
+                <div class='input-group-append'>
+                  <span class='input-group-text text-light'>
+                    <i data-feather='circle'></i>
+                  </span>
+                </div>
+              </div>
+              <small class='form-text text-muted'>Original:
+                <span class='font-italic'
+                      id='medication-edit-input-dosage-original'>
+                      </span>
+              </small>
+            </li>
+            <!-- === Dosage Input End ============================================================================== -->
+
+            <!-- === Frequency Input =============================================================================== -->
+            <li class='list-group-item'>
+              <div class='d-flex w-100 justify-content-between'>
+                <label class='h5'
+                       for='medication-edit-input-frequency'>
+                  Frequency
+                </label>
+                <small class='form-text text-muted text-right'>
+                  How often the medication is taken.
+                </small>
+              </div>
+              <div class='input-group'>
+                <input class='form-control'
+                       id='medication-edit-input-frequency'
+                       name='frequency'
+                       type='text'
+                       placeholder='Frequency'
+                       aria-label='Frequency'
+                       required>
+                <div class='input-group-append'>
+                  <span class='input-group-text text-light'>
+                    <i data-feather='circle'></i>
+                  </span>
+                </div>
+              </div>
+              <small class='form-text text-muted'>Original:
+                <span class='font-italic'
+                      id='medication-edit-input-frequency-original'>
+                      </span>
+              </small>
+            </li>
+            <!-- === Frequency Input End =========================================================================== -->
+
+            <!-- === Time Taken Input ============================================================================== -->
+            <li class='list-group-item '>
+              <div class='d-flex w-100 justify-content-between'>
+                <label class='h5'
+                       for='medication-edit-input-time-taken'>
+                  Time Taken
+                </label>
+                <small class='form-text text-muted text-right'>
+                  When the medication is taken.
+                </small>
+              </div>
+              <div class='input-group'>
+                <input class='form-control'
+                       id='medication-edit-input-time-taken'
+                       name='time_taken'
+                       type='text'
+                       placeholder='Time Taken'
+                       aria-label='Time Taken'
+                       required>
+                <div class='input-group-append'>
+                  <span class='input-group-text text-light'>
+                    <i data-feather='circle'></i>
+                  </span>
+                </div>
+              </div>
+              <small class='form-text text-muted'>Original:
+                <span class='font-italic'
+                      id='medication-edit-input-time-taken-original'>
+                      </span>
+              </small>
+            </li>
+            <!-- === Time Taken Input End ========================================================================== -->
+
+          </ul>
+        </form>
+      </div>
+      <!-- === Button Toolbar ====================================================================================== -->
+      <div class='modal-footer bg-secondary btn-toolbar'>
+        <button class='btn btn-secondary'
+                type='button'
+                data-dismiss='modal'>
+          Cancel
+        </button>
+        <button class='btn btn-warning'
+                type='submit'
+                form='medication-edit-form'>
+          Confirm Edit
+        </button>
+      </div>
+      <!-- === Button Toolbar End ================================================================================== -->
+    </div>
+  </div>
+</div>
+
+<!-- === Query and load the medication info into the form when loaded ============================================== -->
+<script>
+  $('#edit-medication').on('show.bs.modal', function (event) {
+    let button = $(event.relatedTarget);
+    let medication_id = button.data('id');
+    let url = new URL(window.location.href);
+    let client_id = url.searchParams.get('client_id'); // From GET
+
+    let modal = $(this);
+
+    $.ajax({
+      url: `/api/client/${client_id}/medication/${medication_id}`,
+      dataType: 'json',
+      success: function (data) {
+        modal.find('#medication-edit-input-medication').val(data['medication']);
+        modal.find('#medication-edit-input-medication-original').text(data['medication']);
+        modal.find('#medication-edit-input-dosage').val(data['dosage']);
+        modal.find('#medication-edit-input-dosage-original').text(data['dosage']);
+        modal.find('#medication-edit-input-frequency').val(data['frequency']);
+        modal.find('#medication-edit-input-frequency-original').text(data['frequency']);
+        modal.find('#medication-edit-input-time-taken').val(data['time_taken']);
+        modal.find('#medication-edit-input-time-taken-original').text(data['time_taken']);
+        modal.find('#medication-edit-form').attr('action', '/api/client/' + client_id + '/medication/' + medication_id);
+      }
+    });
+  });
+</script>

@@ -1,0 +1,10 @@
+[06-Mar-2018 02:42:08 UTC] PHP Warning:  require(components/footer.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/email/index.php on line 101
+[06-Mar-2018 02:42:08 UTC] PHP Fatal error:  require(): Failed opening required 'components/footer.html' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/email/index.php on line 101
+[07-Mar-2018 21:06:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Account' not found in /home/jacadeve/public_html/staff/dashboard/email/bulk_email.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/staff/dashboard/email/bulk_email.php on line 52
+[07-Mar-2018 21:07:04 UTC] PHP Warning:  mail() expects parameter 4 to be string, array given in /home/jacadeve/public_html/staff/dashboard/email/bulk_email.php on line 64
+[07-Mar-2018 21:13:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jacadeve/public_html/staff/dashboard/email/bulk_email.php:69) in /home/jacadeve/public_html/staff/dashboard/email/bulk_email.php on line 77
+[07-Mar-2018 21:16:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jacadeve/public_html/staff/dashboard/email/bulk_email.php:68) in /home/jacadeve/public_html/staff/dashboard/email/bulk_email.php on line 76
+[07-Mar-2018 22:11:07 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 110592 bytes) in /home/jacadeve/public_html/staff/dashboard/email/bulk_email.php on line 70

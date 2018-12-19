@@ -1,0 +1,27 @@
+[22-Feb-2018 02:25:49 UTC] PHP Warning:  require(../common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/index.php on line 11
+[22-Feb-2018 02:25:49 UTC] PHP Fatal error:  require(): Failed opening required '../common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/index.php on line 11
+[24-Feb-2018 23:05:20 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function staffNavbar(), 0 passed in /home/jacadeve/public_html/staff/dashboard/_index.php on line 32 and exactly 2 expected in /home/jacadeve/public_html/staff/dashboard/components/StaffNavbar.php:47
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/_index.php(32): staffNavbar()
+#1 {main}
+  thrown in /home/jacadeve/public_html/staff/dashboard/components/StaffNavbar.php on line 47
+[24-Feb-2018 23:15:29 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/jacadeve/public_html/staff/dashboard/components/StaffNavbar.php on line 35
+[26-Feb-2018 00:25:53 UTC] PHP Warning:  require_once(../../../common/Account.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:25:53 UTC] PHP Fatal error:  require_once(): Failed opening required '../../../common/Account.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:26:45 UTC] PHP Warning:  require_once(/common/Account.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:26:45 UTC] PHP Fatal error:  require_once(): Failed opening required '/common/Account.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:27:13 UTC] PHP Warning:  require_once(../../../common/Account.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:27:13 UTC] PHP Fatal error:  require_once(): Failed opening required '../../../common/Account.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:27:57 UTC] PHP Fatal error:  Declaration of Participant::query_all(int $offset = 0, string $search = '') must be compatible with Account::query_all(): array in /home/jacadeve/public_html/common/Account.php on line 195
+[26-Feb-2018 00:28:28 UTC] PHP Notice:  Undefined index: offset in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 15
+[26-Feb-2018 00:28:28 UTC] PHP Notice:  Undefined index: search in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 16
+[26-Feb-2018 00:28:28 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to dashboardTable() must be of the type integer, null given, called in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 17 and defined in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php:24
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(17): dashboardTable(NULL, NULL)
+#1 /home/jacadeve/public_html/staff/dashboard/_index.php(15): require_once('/home/jacadeve/...')
+#2 {main}
+  thrown in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 24
+[26-Feb-2018 00:38:53 UTC] PHP Warning:  require_once(../common/Account.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:38:53 UTC] PHP Fatal error:  require_once(): Failed opening required '../common/Account.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:39:04 UTC] PHP Warning:  require_once(../common/Account.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:39:04 UTC] PHP Fatal error:  require_once(): Failed opening required '../common/Account.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11

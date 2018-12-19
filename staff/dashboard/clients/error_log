@@ -1,0 +1,2 @@
+[09-Mar-2018 01:53:12 UTC] PHP Warning:  require(../../common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/clients/index.php on line 12
+[09-Mar-2018 01:53:12 UTC] PHP Fatal error:  require(): Failed opening required '../../common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/clients/index.php on line 12

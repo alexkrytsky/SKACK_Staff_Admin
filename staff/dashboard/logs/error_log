@@ -1,0 +1,106 @@
+[08-Mar-2018 07:55:34 UTC] PHP Notice:  Undefined index: client_id in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 20
+[08-Mar-2018 07:55:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Logging' not found in /home/jacadeve/public_html/staff/dashboard/logs/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 22
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined index: client_id in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 19
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: full_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 72
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: full_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 98
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: last_update in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 103
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: last_update in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 104
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: first_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 132
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: middle_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 132
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: last_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 132
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: phone in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 151
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: email in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 152
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: address in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 156
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: address_city in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 156
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: address_state in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 156
+[08-Mar-2018 07:55:57 UTC] PHP Notice:  Undefined variable: address_zip in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 156
+[08-Mar-2018 07:55:57 UTC] PHP Warning:  require(modals/edit_participant.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 161
+[08-Mar-2018 07:55:57 UTC] PHP Fatal error:  require(): Failed opening required 'modals/edit_participant.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 161
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined index: client_id in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 19
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined variable: first_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined variable: middle_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined variable: last_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined variable: phone in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 103
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined variable: email in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 104
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined variable: address in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined variable: address_city in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined variable: address_state in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:14 UTC] PHP Notice:  Undefined variable: address_zip in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:14 UTC] PHP Warning:  require(modals/edit_participant.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:57:14 UTC] PHP Fatal error:  require(): Failed opening required 'modals/edit_participant.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: client_id in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 23
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: client_id in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 24
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: client_id in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 25
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: first_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 82
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: middle_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 82
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: last_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 82
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: phone in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 101
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: email in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 102
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: address in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 106
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: address_city in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 106
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: address_state in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 106
+[08-Mar-2018 07:57:26 UTC] PHP Notice:  Undefined variable: address_zip in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 106
+[08-Mar-2018 07:57:26 UTC] PHP Warning:  require(modals/edit_participant.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 111
+[08-Mar-2018 07:57:26 UTC] PHP Fatal error:  require(): Failed opening required 'modals/edit_participant.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 111
+[08-Mar-2018 07:57:49 UTC] PHP Notice:  Undefined variable: first_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:57:49 UTC] PHP Notice:  Undefined variable: middle_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:57:49 UTC] PHP Notice:  Undefined variable: last_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:57:49 UTC] PHP Notice:  Undefined variable: phone in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 103
+[08-Mar-2018 07:57:49 UTC] PHP Notice:  Undefined variable: email in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 104
+[08-Mar-2018 07:57:49 UTC] PHP Notice:  Undefined variable: address in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:49 UTC] PHP Notice:  Undefined variable: address_city in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:49 UTC] PHP Notice:  Undefined variable: address_state in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:49 UTC] PHP Notice:  Undefined variable: address_zip in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:49 UTC] PHP Warning:  require(modals/edit_participant.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:57:49 UTC] PHP Fatal error:  require(): Failed opening required 'modals/edit_participant.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:57:55 UTC] PHP Notice:  Undefined variable: first_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:57:55 UTC] PHP Notice:  Undefined variable: middle_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:57:55 UTC] PHP Notice:  Undefined variable: last_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:57:55 UTC] PHP Notice:  Undefined variable: phone in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 103
+[08-Mar-2018 07:57:55 UTC] PHP Notice:  Undefined variable: email in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 104
+[08-Mar-2018 07:57:55 UTC] PHP Notice:  Undefined variable: address in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:55 UTC] PHP Notice:  Undefined variable: address_city in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:55 UTC] PHP Notice:  Undefined variable: address_state in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:55 UTC] PHP Notice:  Undefined variable: address_zip in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:57:55 UTC] PHP Warning:  require(modals/edit_participant.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:57:55 UTC] PHP Fatal error:  require(): Failed opening required 'modals/edit_participant.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:58:38 UTC] PHP Notice:  Undefined variable: first_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:58:38 UTC] PHP Notice:  Undefined variable: middle_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:58:38 UTC] PHP Notice:  Undefined variable: last_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:58:38 UTC] PHP Notice:  Undefined variable: phone in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 103
+[08-Mar-2018 07:58:38 UTC] PHP Notice:  Undefined variable: email in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 104
+[08-Mar-2018 07:58:38 UTC] PHP Notice:  Undefined variable: address in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:38 UTC] PHP Notice:  Undefined variable: address_city in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:38 UTC] PHP Notice:  Undefined variable: address_state in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:38 UTC] PHP Notice:  Undefined variable: address_zip in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:38 UTC] PHP Warning:  require(modals/edit_participant.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:58:38 UTC] PHP Fatal error:  require(): Failed opening required 'modals/edit_participant.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:58:41 UTC] PHP Notice:  Undefined variable: first_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:58:41 UTC] PHP Notice:  Undefined variable: middle_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:58:41 UTC] PHP Notice:  Undefined variable: last_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:58:41 UTC] PHP Notice:  Undefined variable: phone in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 103
+[08-Mar-2018 07:58:41 UTC] PHP Notice:  Undefined variable: email in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 104
+[08-Mar-2018 07:58:41 UTC] PHP Notice:  Undefined variable: address in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:41 UTC] PHP Notice:  Undefined variable: address_city in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:41 UTC] PHP Notice:  Undefined variable: address_state in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:41 UTC] PHP Notice:  Undefined variable: address_zip in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:41 UTC] PHP Warning:  require(modals/edit_participant.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:58:41 UTC] PHP Fatal error:  require(): Failed opening required 'modals/edit_participant.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:58:53 UTC] PHP Notice:  Undefined variable: first_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:58:53 UTC] PHP Notice:  Undefined variable: middle_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:58:53 UTC] PHP Notice:  Undefined variable: last_name in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 84
+[08-Mar-2018 07:58:53 UTC] PHP Notice:  Undefined variable: phone in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 103
+[08-Mar-2018 07:58:53 UTC] PHP Notice:  Undefined variable: email in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 104
+[08-Mar-2018 07:58:53 UTC] PHP Notice:  Undefined variable: address in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:53 UTC] PHP Notice:  Undefined variable: address_city in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:53 UTC] PHP Notice:  Undefined variable: address_state in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:53 UTC] PHP Notice:  Undefined variable: address_zip in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 108
+[08-Mar-2018 07:58:53 UTC] PHP Warning:  require(modals/edit_participant.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 07:58:53 UTC] PHP Fatal error:  require(): Failed opening required 'modals/edit_participant.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 113
+[08-Mar-2018 08:02:57 UTC] PHP Fatal error:  Uncaught Error: Cannot access protected property Logging::$timestamp in /home/jacadeve/public_html/staff/dashboard/logs/index.php:94
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/staff/dashboard/logs/index.php on line 94

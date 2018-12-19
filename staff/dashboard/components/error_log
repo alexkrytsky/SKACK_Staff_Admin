@@ -1,0 +1,86 @@
+[26-Feb-2018 00:38:25 UTC] PHP Warning:  require_once(../../common/Account.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:38:25 UTC] PHP Fatal error:  require_once(): Failed opening required '../../common/Account.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:39:13 UTC] PHP Warning:  require_once(../../common/Account.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[26-Feb-2018 00:39:13 UTC] PHP Fatal error:  require_once(): Failed opening required '../../common/Account.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 11
+[01-Mar-2018 01:41:10 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getPhone() must be of the type integer, string returned in /home/jacadeve/public_html/common/Account.php:443
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(85): Participant->getPhone()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(45): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(19): dashboardTable(1000, '')
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 443
+[01-Mar-2018 01:45:34 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getPhone() must be of the type integer, string returned in /home/jacadeve/public_html/common/Account.php:443
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(85): Participant->getPhone()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(45): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(19): dashboardTable(1000, '')
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 443
+[01-Mar-2018 01:45:38 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getPhone() must be of the type integer, string returned in /home/jacadeve/public_html/common/Account.php:443
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(85): Participant->getPhone()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(45): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(19): dashboardTable(1000, '')
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 443
+[01-Mar-2018 01:45:42 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getPhone() must be of the type integer, string returned in /home/jacadeve/public_html/common/Account.php:443
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(85): Participant->getPhone()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(45): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(19): dashboardTable(1000, '')
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 443
+[08-Mar-2018 03:03:05 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getClientId() must be of the type integer, null returned in /home/jacadeve/public_html/common/Account.php:480
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(92): Participant->getClientId()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(45): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(19): dashboardTable(0, '')
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 480
+[08-Mar-2018 03:03:27 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getClientId() must be of the type integer, null returned in /home/jacadeve/public_html/common/Account.php:480
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(92): Participant->getClientId()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(45): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(19): dashboardTable(0, '')
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 480
+[08-Mar-2018 03:04:15 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getClientId() must be of the type integer, null returned in /home/jacadeve/public_html/common/Account.php:480
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(92): Participant->getClientId()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(45): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(19): dashboardTable(0, '')
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 480
+[08-Mar-2018 03:09:44 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getClientId() must be of the type integer, null returned in /home/jacadeve/public_html/common/Account.php:480
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(92): Participant->getClientId()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(45): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(19): dashboardTable(0, '')
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 480
+[08-Mar-2018 03:14:03 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getClientId() must be of the type integer, null returned in /home/jacadeve/public_html/common/Account.php:480
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(92): Participant->getClientId()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(45): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(19): dashboardTable(0, '')
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 480
+[08-Mar-2018 03:18:13 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Participant::getPhone() must be of the type integer, string returned in /home/jacadeve/public_html/common/Account.php:501
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(98): Participant->getPhone()
+#1 [internal function]: row(Object(Participant))
+#2 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(49): array_map('row', Array)
+#3 /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php(21): dashboardTable(0, '', 'name', true)
+#4 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 501
+[09-Mar-2018 00:35:11 UTC] PHP Notice:  A non well formed numeric value encountered in /home/jacadeve/public_html/common/Account.php on line 580
+[15-Mar-2018 09:00:03 UTC] PHP Warning:  array_map(): Argument #2 should be an array in /home/jacadeve/public_html/staff/dashboard/components/DashboardTable.php on line 38

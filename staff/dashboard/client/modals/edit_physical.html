@@ -1,0 +1,101 @@
+<div class='modal fade'
+     id='edit-physical-limitation'
+     tabindex='-1'
+     role='dialog'
+     aria-labelledby='edit-limitation-label'
+     aria-hidden='true'>
+  <div class='modal-dialog modal-lg'
+       role='document'>
+    <div class='modal-content'>
+      <!-- === Modal Header ============================================================ -->
+      <div class='modal-header bg-dark text-light'>
+        <h5 class='modal-title'
+            id='edit-limitation-label'>
+          Edit Physical Limitation
+        </h5>
+        <button class='close text-light'
+                type='button'
+                data-dismiss='modal'
+                aria-label='Close'>
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div>
+      <!-- === Modal Header End ======================================================== -->
+      <div class='modal-body bg-light p-0 m-0'>
+        <form id='physical-edit-form'
+              method='post'>
+          <ul class='list-group list-group-flush'>
+
+            <!-- === Physical Limitation Input ===== -->
+            <li class='list-group-item'>
+              <div class='d-flex w-100 justify-content-between'>
+                <label class='h5'
+                       for='physical-edit-input-limitation'>
+                  Limitation
+                </label>
+                <small class='form-text text-muted text-right'>
+                  Description of Physical Limitation.
+                </small>
+              </div>
+              <div class='input-group'>
+                <input class='form-control'
+                       id='physical-edit-input-limitation'
+                       name='limitation'
+                       type='text'
+                       placeholder='Physical Limitation'
+                       aria-label='Physical Limitation'
+                       required>
+                <div class='input-group-append'>
+                  <span class='input-group-text text-light'>
+                    <i data-feather='circle'></i>
+                  </span>
+                </div>
+              </div>
+              <small class='form-text text-muted'>
+                Original:
+                <span class='font-italic'
+                      id='physical-edit-input-limitation-original'>
+                </span>
+              </small>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <!-- === Button Toolbar ==== -->
+      <div class='modal-footer bg-secondary btn-toolbar '>
+        <button class='btn btn-secondary'
+                type='button'
+                data-dismiss='modal'>
+          Cancel
+        </button>
+        <button type='submit'
+                class='btn btn-warning'
+                form='physical-edit-form'>
+          Confirm Edit
+        </button>
+      </div>
+      <!-- === Button Toolbar End ==== -->
+    </div>
+  </div>
+</div>
+
+<script>
+  $('#edit-physical-limitation').on('show.bs.modal', function (event) {
+    let button = $(event.relatedTarget);
+    let id = button.data('id');
+    let url = new URL(window.location.href);
+    let client_id = url.searchParams.get('client_id'); // From GET
+
+    let modal = $(this);
+
+    $.ajax({
+      url: `/api/client/${client_id}/physical_limitation/${id}`,
+      dataType: 'json',
+      success: function (data) {
+        modal.find('#physical-edit-input-limitation').val(data['limitation']);
+        modal.find('#physical-edit-input-limitation-original').text(data['limitation']);
+        modal.find('#physical-edit-form').attr('action', '/api/client/' + client_id + '/physical_limitation/' + id);
+      }
+    });
+  });
+</script>

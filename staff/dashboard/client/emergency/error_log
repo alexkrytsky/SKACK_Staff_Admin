@@ -1,0 +1,29 @@
+[17-Feb-2018 09:51:19 UTC] PHP Warning:  require_once(../common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/caleb/common/client.php on line 11
+[17-Feb-2018 09:51:19 UTC] PHP Fatal error:  require_once(): Failed opening required '../common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/caleb/common/client.php on line 11
+[17-Feb-2018 09:51:53 UTC] PHP Warning:  require(../../../common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/caleb/client/emergency/index.php on line 11
+[17-Feb-2018 09:51:53 UTC] PHP Fatal error:  require(): Failed opening required '../../../common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/caleb/client/emergency/index.php on line 11
+[17-Feb-2018 09:52:08 UTC] PHP Warning:  require(../common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/caleb/client/emergency/index.php on line 11
+[17-Feb-2018 09:52:08 UTC] PHP Fatal error:  require(): Failed opening required '../common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/caleb/client/emergency/index.php on line 11
+[17-Feb-2018 09:52:27 UTC] PHP Warning:  require_once(../common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/caleb/common/client.php on line 11
+[17-Feb-2018 09:52:27 UTC] PHP Fatal error:  require_once(): Failed opening required '../common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/caleb/common/client.php on line 11
+[17-Feb-2018 09:53:01 UTC] PHP Warning:  require(./caleb/common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/caleb/client/emergency/index.php on line 11
+[17-Feb-2018 09:53:01 UTC] PHP Fatal error:  require(): Failed opening required './caleb/common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/caleb/client/emergency/index.php on line 11
+[17-Feb-2018 09:53:22 UTC] PHP Warning:  require(/caleb/common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/caleb/client/emergency/index.php on line 11
+[17-Feb-2018 09:53:22 UTC] PHP Fatal error:  require(): Failed opening required '/caleb/common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/caleb/client/emergency/index.php on line 11
+[17-Feb-2018 09:53:50 UTC] PHP Warning:  require_once(../common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/caleb/common/client.php on line 11
+[17-Feb-2018 09:53:50 UTC] PHP Fatal error:  require_once(): Failed opening required '../common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/caleb/common/client.php on line 11
+[22-Feb-2018 02:33:16 UTC] PHP Warning:  require(../../common/index.php): failed to open stream: No such file or directory in /home/jacadeve/public_html/staff/dashboard/client/emergency/index.php on line 11
+[22-Feb-2018 02:33:16 UTC] PHP Fatal error:  require(): Failed opening required '../../common/index.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/staff/dashboard/client/emergency/index.php on line 11
+[25-Feb-2018 03:58:24 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Participant::query_from_client_id() must be of the type integer, string given, called in /home/jacadeve/public_html/staff/dashboard/client/emergency/index.php on line 37 and defined in /home/jacadeve/public_html/common/Account.php:274
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/client/emergency/index.php(37): Participant::query_from_client_id('undefined')
+#1 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 274
+[25-Feb-2018 04:14:33 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Participant::query_from_client_id() must be of the type integer, string given, called in /home/jacadeve/public_html/staff/dashboard/client/emergency/index.php on line 37 and defined in /home/jacadeve/public_html/common/Account.php:274
+Stack trace:
+#0 /home/jacadeve/public_html/staff/dashboard/client/emergency/index.php(37): Participant::query_from_client_id('undefined')
+#1 {main}
+  thrown in /home/jacadeve/public_html/common/Account.php on line 274
+[08-Mar-2018 23:02:40 UTC] PHP Notice:  A non well formed numeric value encountered in /home/jacadeve/public_html/common/Account.php on line 580
+[08-Mar-2018 23:03:38 UTC] PHP Notice:  A non well formed numeric value encountered in /home/jacadeve/public_html/common/Account.php on line 580
+[09-Mar-2018 00:35:19 UTC] PHP Notice:  A non well formed numeric value encountered in /home/jacadeve/public_html/common/Account.php on line 580

@@ -1,0 +1,32 @@
+[17-Mar-2018 20:38:06 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/jacadeve/public_html/client/landing/wizard/index.php:1001
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/client/landing/wizard/index.php on line 1001
+[17-Mar-2018 20:38:12 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/jacadeve/public_html/client/landing/wizard/index.php:1001
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/client/landing/wizard/index.php on line 1001
+[17-Mar-2018 20:39:35 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/jacadeve/public_html/client/landing/wizard/index.php:1001
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/client/landing/wizard/index.php on line 1001
+[17-Mar-2018 20:39:45 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/jacadeve/public_html/client/landing/wizard/index.php:1001
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/client/landing/wizard/index.php on line 1001
+[17-Mar-2018 20:45:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Contact' not found in /home/jacadeve/public_html/client/landing/wizard/contact_list.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/client/landing/wizard/contact_list.php on line 8
+[19-Mar-2018 23:20:34 UTC] PHP Warning:  require_once(../headerUserNew.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:20:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../headerUserNew.html' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:21:22 UTC] PHP Warning:  require_once(../../register/headerUserNew.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:21:22 UTC] PHP Fatal error:  require_once(): Failed opening required '../../register/headerUserNew.html' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:21:40 UTC] PHP Warning:  require_once(../clinet/register/headerUserNew.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:21:40 UTC] PHP Fatal error:  require_once(): Failed opening required '../clinet/register/headerUserNew.html' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:21:51 UTC] PHP Warning:  require_once(.../clinet/register/headerUserNew.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:21:51 UTC] PHP Fatal error:  require_once(): Failed opening required '.../clinet/register/headerUserNew.html' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:22:03 UTC] PHP Warning:  require_once(../client/register/headerUserNew.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:22:03 UTC] PHP Fatal error:  require_once(): Failed opening required '../client/register/headerUserNew.html' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:22:18 UTC] PHP Warning:  require_once(.../client/register/headerUserNew.html): failed to open stream: No such file or directory in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49
+[19-Mar-2018 23:22:18 UTC] PHP Fatal error:  require_once(): Failed opening required '.../client/register/headerUserNew.html' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/jacadeve/public_html/client/landing/wizard/index.php on line 49

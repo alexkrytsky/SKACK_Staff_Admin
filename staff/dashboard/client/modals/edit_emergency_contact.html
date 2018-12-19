@@ -1,0 +1,202 @@
+<div class='modal fade'
+     id='edit-emergency-contact'
+     tabindex='-1'
+     role='dialog'
+     aria-labelledby='edit-emergency-contact-label'
+     aria-hidden='true'>
+  <div class='modal-dialog modal-lg'
+       role='document'>
+    <div class='modal-content'>
+      <!-- Modal Header -->
+      <div class='modal-header bg-dark text-light'>
+        <h5 class='modal-title'
+            id='edit-emergency-contact-label'>
+          Edit Emergency Contact Information
+        </h5>
+        <button class='close text-light'
+                type='button'
+                data-dismiss='modal'
+                aria-label='Close'>
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div>
+      <!-- Modal Header End -->
+      <div class='modal-body bg-light p-0 m-0'>
+        <form id='emergency-contact-edit-form'
+              method='post'>
+          <ul class='list-group list-group-flush'>
+            <!--First Name-->
+            <li class='list-group-item py-1'>
+              <div class='d-flex justify-content-between'>
+                <label class='h6'
+                       for='emergency-contact-edit-input-first-name'>
+                  First Name
+                </label>
+                <small class='form-text text-muted text-right'>
+                  Contacts First Name.
+                </small>
+              </div>
+              <div class='input-group input-group-sm'>
+                <input class='form-control'
+                       id='emergency-contact-edit-input-first-name'
+                       name='first_name'
+                       type='text'
+                       placeholder='First Name'
+                       aria-label='First Name'
+                       required>
+                <div class='input-group-append'>
+                  <span class='input-group-text text-light'>
+                    <i data-feather='circle'></i>
+                  </span>
+                </div>
+              </div>
+              <small class='form-text text-muted'>
+                Original:
+                <span class='font-italic'
+                      id='emergency-contact-edit-input-first-name-original'>
+                </span>
+              </small>
+            </li>
+            <!--Last Name-->
+            <li class='list-group-item py-1'>
+              <div class='d-flex justify-content-between'>
+                <label class='h6'
+                       for='emergency-contact-edit-input-last-name'>
+                  Last Name
+                </label>
+                <small class='form-text text-muted text-right'>
+                  Contacts Last Name.
+                </small>
+              </div>
+              <div class='input-group input-group-sm'>
+                <input class='form-control'
+                       id='emergency-contact-edit-input-last-name'
+                       name='last_name'
+                       type='text'
+                       placeholder='Last Name'
+                       aria-label='Last Name'
+                       required>
+                <div class='input-group-append'>
+                  <span class='input-group-text text-light'>
+                    <i data-feather='circle'></i>
+                  </span>
+                </div>
+              </div>
+              <small class='form-text text-muted'>
+                Original:
+                <span class='font-italic'
+                      id='emergency-contact-edit-input-last-name-original'>
+                </span>
+              </small>
+            </li>
+            <!--Phone Number-->
+            <li class='list-group-item py-1'>
+              <div class='d-flex justify-content-between'>
+                <label class='h6'
+                       for='emergency-contact-edit-input-phone'>
+                  Phone Number
+                </label>
+                <small class='form-text text-muted text-right'>
+                  Contacts 10 Digit Phone Number.
+                </small>
+              </div>
+              <div class='input-group input-group-sm'>
+                <input class='form-control'
+                       id='emergency-contact-edit-input-phone'
+                       name='phone'
+                       type='tel'
+                       placeholder='##########'
+                       aria-label='Phone Number'
+                       maxlength='10'
+                       required>
+                <div class='input-group-append'>
+                  <span class='input-group-text text-light'>
+                    <i data-feather='circle'></i>
+                  </span>
+                </div>
+              </div>
+              <small class='form-text text-muted'>
+                Original:
+                <span class='font-italic'
+                      id='emergency-contact-edit-input-phone-original'>
+                </span>
+              </small>
+            </li>
+            <!-- Alternative Phone Number-->
+            <li class='list-group-item py-1'>
+              <div class='d-flex justify-content-between'>
+                <label class='h6'
+                       for='emergency-contact-edit-input-phone'>
+                  Alternate Phone Number
+                </label>
+                <small class='form-text text-muted text-right'>
+                  Contacts 10 Digit Alternate Phone Number.
+                </small>
+              </div>
+              <div class='input-group input-group-sm'>
+                <input class='form-control'
+                       id='emergency-contact-edit-input-phone-alt'
+                       name='alternate_phone'
+                       type='tel'
+                       placeholder='##########'
+                       aria-label='Alternate Phone Number'
+                       maxlength='10'
+                       required>
+                <div class='input-group-append'>
+                  <span class='input-group-text text-light'>
+                    <i data-feather='circle'></i>
+                  </span>
+                </div>
+              </div>
+              <small class='form-text text-muted'>
+                Original:
+                <span class='font-italic'
+                      id='emergency-contact-edit-input-phone-alt-original'>
+                </span>
+              </small>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class='modal-footer bg-secondary btn-toolbar '>
+        <button type='button'
+                class='btn btn-secondary'
+                data-dismiss='modal'>
+          Cancel
+        </button>
+        <button type='submit'
+                class='btn btn-warning'
+                form='emergency-contact-edit-form'>
+          Confirm Edit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('#edit-emergency-contact').on('show.bs.modal', function (event) {
+    let button = $(event.relatedTarget);
+    let contact_id = button.data('contact-id');
+    let url = new URL(window.location.href);
+    let client_id = url.searchParams.get('client_id'); // From GET
+
+    let modal = $(this);
+
+    $.ajax({
+      url: `/api/client/${client_id}/emergency_contact/${contact_id}`,
+      dataType: 'json',
+      success: function (data) {
+        modal.find('#emergency-contact-edit-input-first-name').val(data['first_name']);
+        modal.find('#emergency-contact-edit-input-first-name-original').text(data['first_name']);
+        modal.find('#emergency-contact-edit-input-last-name').val(data['last_name']);
+        modal.find('#emergency-contact-edit-input-last-name-original').text(data['last_name']);
+        modal.find('#emergency-contact-edit-input-phone').val(data['phone']);
+        modal.find('#emergency-contact-edit-input-phone-original').text(data['phone']);
+        modal.find('#emergency-contact-edit-input-phone-alt').val(data['alternate_phone']);
+        modal.find('#emergency-contact-edit-input-phone-alt-original').text(data['alternate_phone']);
+        modal.find('#emergency-contact-edit-form').attr('action', '/api/client/' + client_id + '/emergency_contact/' + contact_id);
+      }
+    });
+  });
+</script>

@@ -1,0 +1,5 @@
+[08-Mar-2018 10:12:39 UTC] PHP Notice:  Undefined variable: first_name in /home/jacadeve/public_html/staff/dashboard/new/index.php on line 85
+[13-Mar-2018 21:02:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Account' not found in /home/jacadeve/public_html/staff/dashboard/new/index.php:349
+Stack trace:
+#0 {main}
+  thrown in /home/jacadeve/public_html/staff/dashboard/new/index.php on line 349
